@@ -26,6 +26,8 @@ background-color:violet
     left: 0;
     right: 0;
     bottom: 0;
+    border-radius: 10px;
+    overflow: hidden;
     margin: auto;
 
 }
@@ -44,4 +46,40 @@ background-color:violet
     height: 100%;
     float: left;
     color: #f6f5f7;
+}
+.contenido{
+    /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
+    position: relativo;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    padding: 40px;
+}
+input {
+	width: 70%;
+    padding: 12px 15px;
+    border: none;
+    background-color: #eee;
+}
+
+button {
+  font-size: 15px;
+	font-weight: bold;
+	padding: 12px 45px;
+	border-radius: 30px;
+	background-color: #FF416C;
+	border: 1px solid #FF416C;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: transform 10ms ease-in;
+}
+
+button:active {
+	transform: scale(0.75);
+}
+#error {
+    color: red;
+    display: none
+
 }
